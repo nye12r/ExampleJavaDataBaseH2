@@ -75,7 +75,7 @@ public class H2MemoryDatabaseExample {
             stmt.execute("INSERT INTO PERSON(id, name) VALUES(1, 'Anju')");
             stmt.execute("INSERT INTO PERSON(id, name) VALUES(2, 'Sonia')");
             stmt.execute("INSERT INTO PERSON(id, name) VALUES(3, 'Asha')");
-
+            stmt.execute("INSERT INTO PERSON(id, name) VALUES(4, 'Julian')");
             ResultSet rs = stmt.executeQuery("select * from PERSON");
             System.out.println("H2 In-Memory Database inserted through Statement");
             while (rs.next()) {
